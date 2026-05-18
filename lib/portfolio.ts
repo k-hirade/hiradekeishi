@@ -26,7 +26,7 @@ export type SkillGroup = {
 
 export const profile = {
   name: "Keishi Hirade",
-  japaneseName: "平出 慶士",
+  japaneseName: "平出 景詩",
   siteUrl: "https://hiradekeishi.com",
   email: "keisi.hirade.97@gmail.com",
   githubUrl: "https://github.com/k-hirade",
