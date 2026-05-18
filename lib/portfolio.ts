@@ -87,13 +87,13 @@ export const projects: Project[] = [
     technologies: ["React", "Next.js", "Node.js", "Firebase", "Stripe"],
   },
   {
-    name: "Automated YouTube Content Pipelines",
+    name: "Automated Content Pipelines",
     subtitle: "Autonomous media generation",
     status: "Always-on systems",
     platform: "Automation",
     description:
-      "Multiple autonomous content generation and publishing pipelines running 24/7, with AI-assisted video creation, FFmpeg processing, YouTube API publishing, and cross-platform posting to X, Instagram, and TikTok.",
-    technologies: ["Python", "FFmpeg", "YouTube API", "X API", "Linux", "WSL2", "Ubuntu", "tmux"],
+      "Multiple autonomous content generation and publishing pipelines running 24/7, with AI-assisted media creation, FFmpeg processing, scheduled publishing workflows, and cross-platform posting automation.",
+    technologies: ["Python", "FFmpeg", "X API", "Linux", "WSL2", "Ubuntu", "tmux"],
   },
 ];
 
@@ -141,7 +141,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Data & APIs",
-    skills: ["Gemini API", "OpenAI API", "Stripe API", "YouTube API", "X API", "Meta SDK"],
+    skills: ["Gemini API", "OpenAI API", "Stripe API", "X API", "Meta SDK"],
   },
   {
     title: "DevOps & Tools",
