@@ -6,7 +6,7 @@ export function ContactSection() {
       <div className="container contact-shell">
         <div>
           <p className="section-kicker">Contact</p>
-          <h2 id="contact-title">Open to Forward Deployed Engineer and Solutions Engineer roles.</h2>
+          <h2 id="contact-title">Thanks for visiting. You can find me here.</h2>
         </div>
 
         <div className="contact-actions">

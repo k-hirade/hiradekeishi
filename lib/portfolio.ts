@@ -34,7 +34,7 @@ export const profile = {
   location: "Tokyo, Japan",
   tagline: "Software Engineer building AI-powered products from zero to production.",
   oneLiner:
-    "SRE at Rakuten Travel by day, indie maker of AI apps by passion. Seeking Forward Deployed Engineer roles at leading AI companies.",
+    "SRE at Rakuten Travel and indie maker of AI apps, with a focus on practical products that connect AI, infrastructure, and real users.",
 } as const;
 
 export const navigationItems: NavigationItem[] = [
@@ -54,7 +54,7 @@ export const highlights = [
 export const aboutParagraphs = [
   "I'm a Tokyo-based software engineer with a passion for bridging cutting-edge AI and real-world product experiences. I graduated from Meiji University, Faculty of Science and Technology, Mechanical Information Engineering, and published a paper at an international conference as an undergraduate.",
   "With professional experience spanning a U.S. AI robotics startup, Osaro, Inc., and one of Japan's largest tech companies, Rakuten, I bring a cross-cultural perspective to engineering. I'm bilingual in Japanese and English with TOEIC 820, and I thrive at the intersection of customer-facing problem solving and deep technical implementation.",
-  "I'm currently seeking Forward Deployed Engineer and Solutions Engineer roles at AI-first companies where I can combine hands-on engineering with direct customer impact.",
+  "Outside of my work as an SRE, I build and ship AI-powered apps and automation systems. I enjoy turning rough ideas into reliable products that people can actually use.",
 ];
 
 export const projects: Project[] = [
