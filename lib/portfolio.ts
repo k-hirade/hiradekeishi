@@ -86,13 +86,23 @@ export const projects: Project[] = [
     links: [{ label: "Website", href: "https://reportai.jp/" }],
   },
   {
-    name: "Automated Content Pipelines",
-    subtitle: "Autonomous media generation",
-    meta: "Automation · Always-on",
+    name: "tsukusuta",
+    subtitle: "Custom LINE Sticker Maker",
+    meta: "Web · Service paused",
     description:
-      "Autonomous content generation and publishing pipelines running 24/7, with AI-assisted media creation, FFmpeg processing, and cross-platform posting automation.",
-    technologies: ["Python", "FFmpeg", "X API", "Linux", "tmux"],
-    links: [{ label: "TikTok", href: "https://www.tiktok.com/@tsukusuta" }],
+      "A web app that turned user-uploaded images into LINE-ready sticker sets. AI-driven image processing handled background removal and per-sticker formatting, with Cloud Functions automating the upload-to-publish pipeline on Firebase.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Firebase Auth",
+      "Firestore",
+      "Cloud Functions",
+      "AI image processing",
+    ],
+    links: [
+      { label: "note", href: "https://note.com/tsukusuta" },
+      { label: "TikTok", href: "https://www.tiktok.com/@tsukusuta" },
+    ],
   },
 ];
 
