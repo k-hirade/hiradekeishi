@@ -6,8 +6,7 @@ export type NavigationItem = {
 export type Project = {
   name: string;
   subtitle: string;
-  status: string;
-  platform: string;
+  meta: string;
   description: string;
   technologies: string[];
   links?: ExternalLink[];
@@ -38,9 +37,7 @@ export const profile = {
   githubUrl: "https://github.com/k-hirade",
   linkedinUrl: "https://www.linkedin.com/in/k-hirade/",
   location: "Tokyo, Japan",
-  tagline: "Software Engineer building AI-powered products from zero to production.",
-  oneLiner:
-    "SRE at Rakuten Travel and indie maker of AI apps, with a focus on practical products that connect AI, infrastructure, and real users.",
+  tagline: "Software engineer building AI-powered products from zero to production.",
 } as const;
 
 export const navigationItems: NavigationItem[] = [
@@ -51,35 +48,25 @@ export const navigationItems: NavigationItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const highlights = [
-  { label: "Shipped", value: "App Store iOS app" },
-  { label: "Built", value: "Revenue SaaS" },
-  { label: "Worked", value: "US AI robotics + Japan tech" },
-] as const;
-
 export const aboutParagraphs = [
-  "I'm a Tokyo-based software engineer with a passion for bridging cutting-edge AI and real-world product experiences. I graduated from Meiji University, Faculty of Science and Technology, Mechanical Information Engineering, and published a paper at an international conference as an undergraduate.",
-  "With professional experience spanning a U.S. AI robotics startup, Osaro, Inc., and one of Japan's largest tech companies, Rakuten, I bring a cross-cultural perspective to engineering. I'm bilingual in Japanese and English with TOEIC 820, and I thrive at the intersection of customer-facing problem solving and deep technical implementation.",
-  "Outside of my work as an SRE, I build and ship AI-powered apps and automation systems. I enjoy turning rough ideas into reliable products that people can actually use.",
+  "Tokyo-based software engineer working at the intersection of AI and product. Graduated from Meiji University, Faculty of Science and Technology, and published a paper at an international conference as an undergraduate.",
+  "SRE at Rakuten Travel by day, indie maker of AI apps by night. Previously worked on AI-powered robotics at Osaro, Inc. in the U.S. Bilingual in Japanese and English.",
 ];
 
 export const projects: Project[] = [
   {
     name: "BuddhaChat",
     subtitle: "AI Buddhist Counselor",
-    status: "Live on App Store",
-    platform: "iOS",
+    meta: "iOS · Live on App Store",
     description:
-      "An iOS app that provides compassionate, Buddhist-inspired guidance powered by Google's Gemini API. Built with SwiftUI, GCP Cloud Run, Firebase, Stripe subscriptions, and Meta SDK campaign integration.",
+      "An iOS app providing compassionate, Buddhist-inspired guidance powered by Google's Gemini API. Built with SwiftUI, GCP Cloud Run, Firebase, Stripe subscriptions, and Meta SDK campaign integration.",
     technologies: [
       "Swift",
       "SwiftUI",
       "Gemini API",
       "GCP Cloud Run",
       "Cloud Functions",
-      "Secret Manager",
-      "Firebase Auth",
-      "Firestore",
+      "Firebase",
       "Stripe",
     ],
     links: [
@@ -92,8 +79,7 @@ export const projects: Project[] = [
   {
     name: "ReportAI",
     subtitle: "AI Writing Assistant for Students",
-    status: "Revenue generating",
-    platform: "SaaS",
+    meta: "SaaS · Revenue generating",
     description:
       "A full-stack SaaS product that helps university students draft academic reports with AI, including user authentication and payment processing.",
     technologies: ["React", "Next.js", "Node.js", "Firebase", "Stripe"],
@@ -102,11 +88,10 @@ export const projects: Project[] = [
   {
     name: "Automated Content Pipelines",
     subtitle: "Autonomous media generation",
-    status: "Always-on systems",
-    platform: "Automation",
+    meta: "Automation · Always-on",
     description:
-      "Multiple autonomous content generation and publishing pipelines running 24/7, with AI-assisted media creation, FFmpeg processing, scheduled publishing workflows, and cross-platform posting automation.",
-    technologies: ["Python", "FFmpeg", "X API", "Linux", "WSL2", "Ubuntu", "tmux"],
+      "Autonomous content generation and publishing pipelines running 24/7, with AI-assisted media creation, FFmpeg processing, and cross-platform posting automation.",
+    technologies: ["Python", "FFmpeg", "X API", "Linux", "tmux"],
     links: [{ label: "TikTok", href: "https://www.tiktok.com/@tsukusuta" }],
   },
 ];
@@ -115,7 +100,7 @@ export const experience: Experience[] = [
   {
     role: "SRE Engineer",
     company: "Rakuten Travel",
-    period: "Apr 2025 - Present",
+    period: "Apr 2025 — Present",
     description:
       "Managing production infrastructure for one of Japan's largest travel platforms, with site reliability engineering work for high-availability systems.",
   },
@@ -126,18 +111,6 @@ export const experience: Experience[] = [
     description:
       "Worked on AI-powered robotic systems for warehouse automation, collaborating across engineering and customer-facing teams to deploy AI solutions in real-world environments.",
   },
-  {
-    role: "Engineering Intern",
-    company: "matrix Inc.",
-    period: "Internship",
-    description: "Software development at a Japanese tech company.",
-  },
-  {
-    role: "Engineering Intern",
-    company: "リアステージ (RealStage)",
-    period: "Internship",
-    description: "Software engineering internship.",
-  },
 ];
 
 export const skillGroups: SkillGroup[] = [
@@ -147,11 +120,11 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Frontend",
-    skills: ["SwiftUI", "React", "Next.js", "HTML", "CSS"],
+    skills: ["SwiftUI", "React", "Next.js"],
   },
   {
     title: "Backend & Infra",
-    skills: ["GCP Cloud Run", "Cloud Functions", "Secret Manager", "Firebase Auth", "Firestore", "Docker", "Nginx"],
+    skills: ["GCP Cloud Run", "Cloud Functions", "Firebase", "Firestore", "Docker", "Nginx"],
   },
   {
     title: "Data & APIs",
@@ -159,10 +132,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "DevOps & Tools",
-    skills: ["Git", "GitHub", "Linux", "Ubuntu", "WSL2", "tmux", "FFmpeg", "MySQL"],
-  },
-  {
-    title: "Other",
-    skills: ["Bilingual Japanese and English", "TOEIC 820", "International conference publication"],
+    skills: ["Git", "Linux", "Ubuntu", "tmux", "FFmpeg", "MySQL"],
   },
 ];

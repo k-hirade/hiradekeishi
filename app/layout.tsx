@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `${profile.name} | AI Product Engineer`,
-    description: profile.oneLiner,
+    description: profile.tagline,
     url: profile.siteUrl,
     siteName: `${profile.name} Portfolio`,
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} | AI Product Engineer`,
-    description: profile.oneLiner,
+    description: profile.tagline,
     images: ["/assets/hero-ai-products.png"],
   },
 };
