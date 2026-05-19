@@ -402,6 +402,31 @@ h3 {
   font-weight: 800;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  border-color: var(--green);
+  background: #f2f8f4;
+}
+
 .tech-line {
   margin-top: auto;
   padding-top: 18px;

@@ -18,17 +18,10 @@ export function ContactSection() {
             <span>GitHub</span>
             <strong>github.com/k-hirade</strong>
           </a>
-          {profile.linkedinUrl ? (
-            <a className="contact-link" href={profile.linkedinUrl} rel="noreferrer">
-              <span>LinkedIn</span>
-              <strong>View profile</strong>
-            </a>
-          ) : (
-            <div className="contact-link contact-link-static">
-              <span>LinkedIn</span>
-              <strong>URL to be added</strong>
-            </div>
-          )}
+          <a className="contact-link" href={profile.linkedinUrl} rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/k-hirade</strong>
+          </a>
           <div className="contact-link contact-link-static">
             <span>Location</span>
             <strong>{profile.location}</strong>

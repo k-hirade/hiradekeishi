@@ -22,8 +22,8 @@ export default function HomePage() {
       <SiteHeader />
       <main id="main">
         <Hero />
-        <AboutSection />
         <ProjectsSection />
+        <AboutSection />
         <ExperienceSection />
         <SkillsSection />
         <ContactSection />
@@ -41,7 +41,7 @@ const personJsonLd = {
   jobTitle: "Software Engineer",
   email: `mailto:${profile.email}`,
   url: profile.siteUrl,
-  sameAs: [profile.githubUrl],
+  sameAs: [profile.githubUrl, profile.linkedinUrl],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Tokyo",

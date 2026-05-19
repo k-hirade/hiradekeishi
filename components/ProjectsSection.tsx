@@ -17,6 +17,15 @@ export function ProjectsSection() {
               <h3>{project.name}</h3>
               <p className="project-subtitle">{project.subtitle}</p>
               <p>{project.description}</p>
+              {project.links ? (
+                <div className="project-links" aria-label={`${project.name} links`}>
+                  {project.links.map((link) => (
+                    <a className="project-link" href={link.href} key={link.href} rel="noreferrer">
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
               <p className="tech-line">{project.technologies.join(", ")}</p>
             </article>
           ))}

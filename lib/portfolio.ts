@@ -10,6 +10,12 @@ export type Project = {
   platform: string;
   description: string;
   technologies: string[];
+  links?: ExternalLink[];
+};
+
+export type ExternalLink = {
+  label: string;
+  href: string;
 };
 
 export type Experience = {
@@ -30,7 +36,7 @@ export const profile = {
   siteUrl: "https://hiradekeishi.com",
   email: "keisi.hirade.97@gmail.com",
   githubUrl: "https://github.com/k-hirade",
-  linkedinUrl: null,
+  linkedinUrl: "https://www.linkedin.com/in/k-hirade/",
   location: "Tokyo, Japan",
   tagline: "Software Engineer building AI-powered products from zero to production.",
   oneLiner:
@@ -38,8 +44,8 @@ export const profile = {
 } as const;
 
 export const navigationItems: NavigationItem[] = [
-  { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
+  { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
@@ -76,6 +82,12 @@ export const projects: Project[] = [
       "Firestore",
       "Stripe",
     ],
+    links: [
+      {
+        label: "App Store",
+        href: "https://apps.apple.com/jp/app/%E3%81%B6%E3%81%A3%E3%81%8B%E3%81%A4-%E4%BB%8F%E6%95%99%E3%81%A7%E5%BF%83%E3%82%92%E6%95%B4%E3%81%88%E3%82%8B%E4%BB%8F%E6%B4%BB%E3%82%A2%E3%83%97%E3%83%AA/id6759330136",
+      },
+    ],
   },
   {
     name: "ReportAI",
@@ -85,6 +97,7 @@ export const projects: Project[] = [
     description:
       "A full-stack SaaS product that helps university students draft academic reports with AI, including user authentication and payment processing.",
     technologies: ["React", "Next.js", "Node.js", "Firebase", "Stripe"],
+    links: [{ label: "Website", href: "https://reportai.jp/" }],
   },
   {
     name: "Automated Content Pipelines",
@@ -94,6 +107,7 @@ export const projects: Project[] = [
     description:
       "Multiple autonomous content generation and publishing pipelines running 24/7, with AI-assisted media creation, FFmpeg processing, scheduled publishing workflows, and cross-platform posting automation.",
     technologies: ["Python", "FFmpeg", "X API", "Linux", "WSL2", "Ubuntu", "tmux"],
+    links: [{ label: "TikTok", href: "https://www.tiktok.com/@tsukusuta" }],
   },
 ];
 
