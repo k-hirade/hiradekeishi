@@ -22,9 +22,9 @@ export default function HomePage() {
       <SiteHeader />
       <main id="main">
         <Hero />
+        <ExperienceSection />
         <ProjectsSection />
         <AboutSection />
-        <ExperienceSection />
         <SkillsSection />
         <ContactSection />
       </main>
