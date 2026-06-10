@@ -6,7 +6,7 @@ import { profile } from "@/lib/portfolio";
 export const metadata: Metadata = {
   metadataBase: new URL(profile.siteUrl),
   title: {
-    default: `${profile.name} | AI Product Engineer`,
+    default: `${profile.name}`,
     template: `%s | ${profile.name}`,
   },
   description:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${profile.name} | AI Product Engineer`,
+    title: `${profile.name}`,
     description: profile.tagline,
     url: profile.siteUrl,
     siteName: `${profile.name} Portfolio`,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} | AI Product Engineer`,
+    title: `${profile.name}`,
     description: profile.tagline,
     images: ["/assets/hero-ai-products.png"],
   },
