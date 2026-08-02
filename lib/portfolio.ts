@@ -17,6 +17,17 @@ export type ExternalLink = {
   href: string;
 };
 
+export type Publication = {
+  title: string;
+  authors: string;
+  venue: string;
+  venueDetail: string;
+  period: string;
+  description: string;
+  keywords: string[];
+  links?: ExternalLink[];
+};
+
 export type Experience = {
   role: string;
   company: string;
@@ -42,6 +53,7 @@ export const profile = {
 
 export const navigationItems: NavigationItem[] = [
   { label: "Projects", href: "#projects" },
+  { label: "Research", href: "#research" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
@@ -49,7 +61,7 @@ export const navigationItems: NavigationItem[] = [
 ];
 
 export const aboutParagraphs = [
-  "Tokyo-based software engineer working at the intersection of AI and product. Graduated from Meiji University, Faculty of Science and Technology, and published a paper at an international conference as an undergraduate.",
+  "Tokyo-based software engineer working at the intersection of AI and product. Graduated from Meiji University, Faculty of Science and Technology, where my undergraduate research on curriculum reinforcement learning for hyper-redundant manipulators was published and presented at IEEE/SICE SII 2025 in Munich.",
   "SRE at Rakuten Travel by day, indie maker of AI apps by night. Previously worked on AI-powered robotics at Osaro, Inc. in the U.S. Bilingual in Japanese and English.",
 ];
 
@@ -102,6 +114,35 @@ export const projects: Project[] = [
     links: [
       { label: "note", href: "https://note.com/tsukusuta" },
       { label: "TikTok", href: "https://www.tiktok.com/@tsukusuta" },
+    ],
+  },
+];
+
+export const publications: Publication[] = [
+  {
+    title:
+      "Curriculum Reinforcement Learning for Obstacle Avoidance Postures for a Hyper-redundant Manipulator",
+    authors: "Keishi Hirade, Ryuma Niiyama",
+    venue: "IEEE/SICE SII 2025",
+    venueDetail:
+      "2025 IEEE/SICE International Symposium on System Integration, Munich, Germany · pp. 199–204",
+    period: "Jan 2025",
+    description:
+      "Undergraduate thesis work at the Complex Robot Systems Lab, Meiji University. Hyper-redundant manipulators are well suited to cluttered, narrow workspaces, but the same extra degrees of freedom make them hard to control: analytical methods scale poorly with joint count and get stuck in local minima, while naive deep RL sees its exploration diverge in the high-dimensional action space. I trained the policy with PPO under a curriculum that tightens obstacle and goal conditions stage by stage, paired with a reward balancing collision avoidance against goal reaching — improving both learning efficiency and avoidance performance over training without a curriculum.",
+    keywords: [
+      "Reinforcement learning",
+      "Curriculum learning",
+      "PPO",
+      "Hyper-redundant manipulator",
+      "Obstacle avoidance",
+      "Motion planning",
+      "Python",
+      "PyTorch",
+    ],
+    links: [
+      { label: "IEEE Xplore", href: "https://ieeexplore.ieee.org/document/10871128" },
+      { label: "DOI", href: "https://doi.org/10.1109/SII59315.2025.10871128" },
+      { label: "Lab", href: "https://xrobotlab.jp/news/sii2025/" },
     ],
   },
 ];
